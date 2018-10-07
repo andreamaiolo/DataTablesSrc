@@ -1,0 +1,40 @@
+table.dataTable {
+    thead {
+        th {
+            padding: .5em .75em;
+        }
+    }
+}
+
+div.dataTables_wrapper {
+    .column.info {
+        display: flex;
+    }
+
+	div.dataTables_length {
+		label {
+            align-items: center;
+			display: flex;
+		}
+
+		.select {
+			margin: 0 .5em;
+		}
+	}
+
+	div.dataTables_filter {
+		label {
+            align-items: center;
+			display: flex;
+        }
+    }
+
+    div.dataTables_info {
+        align-self: center;
+        padding: 0;
+    }
+
+    div.dataTables_paginate {
+        padding: 0;
+    }
+}

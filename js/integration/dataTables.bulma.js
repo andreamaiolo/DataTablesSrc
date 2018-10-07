@@ -43,7 +43,7 @@
 
     /* Set the defaults for DataTables initialisation */
     $.extend(true, DataTable.defaults, {
-        dom: "<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12'tr>><'columns'<'column is-5'i><'column is-7'p>>",
+        dom: "<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12'tr>><'columns'<'column info is-5'i><'column is-7'p>>",
         renderer: 'bulma'
     });
 
