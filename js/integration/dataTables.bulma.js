@@ -51,7 +51,9 @@
 
     /* Default class modification */
     $.extend(DataTable.ext.classes, {
-        sLength: 'dataTables_length field'
+        sLength: 'dataTables_length field',
+        sFilter: 'dataTables_filter field',
+        sFilterInput: 'input is-small'
     });
 
     return DataTable;

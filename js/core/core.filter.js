@@ -23,7 +23,7 @@ function _fnFeatureHtmlFilter ( settings )
 			'id': ! features.f ? tableId+'_filter' : null,
 			'class': classes.sFilter
 		} )
-		.append( $('<label/>' ).append( str ) );
+		.append( $('<label class="label"/>' ).append( str ) );
 
 	var searchFn = function() {
 		/* Update all other filter input elements for the new display */
@@ -276,13 +276,13 @@ function _fnFilterCreateSearch( search, regex, smart, caseInsensitive )
 	search = regex ?
 		search :
 		_fnEscapeRegex( search );
-	
+
 	if ( smart ) {
 		/* For smart filtering we want to allow the search to work regardless of
 		 * word order. We also want double quoted text to be preserved, so word
 		 * order is important - a la google. So this is what we want to
 		 * generate:
-		 * 
+		 *
 		 * ^(?=.*?\bone\b)(?=.*?\btwo three\b)(?=.*?\bfour\b).*$
 		 */
 		var a = $.map( search.match( /"[^"]+"|[^ ]+/g ) || [''], function ( word ) {
@@ -414,4 +414,3 @@ function _fnSearchToHung ( obj )
 		bCaseInsensitive: obj.caseInsensitive
 	};
 }
-
