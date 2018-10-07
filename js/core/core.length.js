@@ -42,7 +42,9 @@ function _fnFeatureHtmlLength ( settings )
 		);
 	}
 
-	var div = $('<div><label/></div>').addClass( classes.sLength );
+	select = $('<div class="select is-small"/>').append(select);
+
+	var div = $('<div><label class="label"/></div>').addClass( classes.sLength );
 	if ( ! settings.aanFeatures.l ) {
 		div[0].id = tableId+'_length';
 	}
@@ -69,4 +71,3 @@ function _fnFeatureHtmlLength ( settings )
 
 	return div[0];
 }
-

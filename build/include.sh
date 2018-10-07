@@ -8,13 +8,14 @@ JSHINT="/usr/bin/jshint"
 
 # CSS styling frameworks that DataTables supports
 FRAMEWORKS=(
-	'bootstrap4'
-	'bootstrap'
-	'foundation'
-	'jqueryui'
-	'semanticui'
-	'material'
-	'uikit'
+	# 'bootstrap4'
+	# 'bootstrap'
+	# 'foundation'
+	# 'jqueryui'
+	# 'semanticui'
+	# 'material'
+	# 'uikit'
+	'bulma'
 	'dataTables'
 )
 
@@ -54,7 +55,7 @@ function css_compress {
 
 		echo_msg "CSS compressing $FILE.css"
 		sass --scss --stop-on-error --style compressed $DIR/$FILE.css > $DIR/$FILE.min.css
-		
+
 		echo_msg "  File size: $(ls -l $DIR/$FILE.min.css | awk -F" " '{ print $5 }')"
 	fi
 }
@@ -220,4 +221,3 @@ function examples_process {
 		-m "${DT_BUILT}/media" \
 		-l "css:syntax css:demo js:syntax js:demo"
 }
-
